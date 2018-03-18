@@ -1,5 +1,5 @@
 import time
-
+import dict1
 
 def test():
     now_time = time.time()
