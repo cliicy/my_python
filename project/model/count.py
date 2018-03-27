@@ -1,4 +1,5 @@
 import wx
+import fileinput
 
 
 class A:
@@ -31,6 +32,7 @@ class A:
                 else:
                     data[label][name]=[full_name]
 
+"""
 
 def load(event):
     print("Button will do something")
@@ -43,8 +45,19 @@ def save(event):
     file.write(contents.GetValue())
     file.close()
 
+"""
 
 if __name__== '__main__':
+    print('aaa')
+
+
+"""
+for line in fileinput.input(inplace=True):
+        line=line.rstrip()
+        num=fileinput.lineno()
+        print('%-40s # %2i' %(line, num))
+    
+
     app = wx.App()
     win = wx.Frame(None,title="Simple Editor",size=(410,335))
 #    loadButton=wx.Button(win,label='open',pos=(225,1),size=(80,25))
@@ -76,3 +89,4 @@ if __name__== '__main__':
 
     win.Show()
     app.MainLoop()
+"""
