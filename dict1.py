@@ -1,3 +1,5 @@
+
+
 people = {
     'Alice':{
         'phone':'2341',
@@ -25,6 +27,8 @@ if request =='p':
     key ='phone'
 if request =='a':
     key = 'addr'
+
+
 
 
 if __name__ == '__main__':
