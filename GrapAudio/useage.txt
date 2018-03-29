@@ -1,0 +1,2 @@
+cd H:\2018_git_task\my_python\Pytest\GrapAudio
+python EnglishWord.py deliberate rumor

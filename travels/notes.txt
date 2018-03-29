@@ -1,0 +1,4 @@
+1. start mongodb:
+start cmd /c mongod --dbpath "C:\MongoDB\Server\3.4\data\db"
+
+https://germey.gitbooks.io/python3webspider/content/1.4.2-MongoDB%E7%9A%84%E5%AE%89%E8%A3%85.html
