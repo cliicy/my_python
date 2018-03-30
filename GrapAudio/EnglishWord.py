@@ -2,7 +2,11 @@ from urllib import request
 import re
 import os
 from sys import argv
+'''
+useage:
+python EnglishWord.py deliberate rumor XXX
 
+'''
 
 def callbackProcess(a,b,c):
     '''
