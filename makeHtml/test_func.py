@@ -46,6 +46,8 @@ for x in addlist(alist):
     
 '''
 
+'''
+
 def createGenerator():
     mylist=range(3)
     for i in mylist:
@@ -57,3 +59,9 @@ mygentor=createGenerator()
 print(mygentor)
 for i in mygentor:
     print(i)
+'''
+
+
+listStr = ['python', 'tab', '.com']
+website = ''.join(listStr)
+print(website)
