@@ -2,6 +2,9 @@ import time
 import re
 
 class A():
+    '''
+    a example class
+    '''
     def add(self,a,b):
         return a+b
 

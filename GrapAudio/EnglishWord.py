@@ -41,6 +41,7 @@ for word in words:
     work_path = os.path.join(Eng_words_dir, word+'.mp3')
     request.urlretrieve(filepath,work_path)
 print("Downloading finished")
+print("Please get the audio file from %s" %Eng_words_dir)
 
 
 
