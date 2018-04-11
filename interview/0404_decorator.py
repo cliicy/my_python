@@ -15,14 +15,13 @@ def makeitalic(fn):
     return wrapped
 
 @makebold
-@makeitalic
+#@makeitalic
 def hello():
     return "hello world"
 
 print(hello()) ## returns "<b><i>hello world</i></b>"
-#'''
 
-
+'''
 # A decorator is a function that expects ANOTHER function as parameter
 def my_shiny_new_decorator(a_function_to_decorate):
     def the_wrapper_around_the_original_function():
@@ -59,12 +58,12 @@ def my_shiny_new_decorator(a_function_to_decorate):
 #I am a stand alone function, don't you dare modify me
 #After the function runs
 
-'''
+
 @my_shiny_new_decorator
 def another_stand_alone_function():
     print("Leave me alone")
 another_stand_alone_function()
-'''
+
 
 
 def bread(func):
@@ -84,25 +83,21 @@ def ingredients(func):
 def sandwich(food="--ham--"):
     print(food)
 
-'''
+
 
 sandwich()
 sandwich = bread(ingredients(sandwich))
 sandwich()
-'''
 
-'''
+
+
 
 @bread
 @ingredients
 def sandwich(food="--ham--"):
     print(food)
 sandwich()
-
-'''
-'''
-
-'''
+'
 
 @ingredients
 @bread
@@ -110,7 +105,7 @@ def strange_sandwich(food="--ham--"):
     print(food)
 
 strange_sandwich()
-'''
+
 
 
 def method_friendly_decorator(method_to_decorate):

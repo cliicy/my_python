@@ -1,5 +1,7 @@
 from functools import wraps
 
+
+#'''
 def singleton(cls):
     isinstance={}
     @wraps(cls)
@@ -25,15 +27,23 @@ class Singleton(type):
 
 class MyClass(metaclass=Singleton):
     pass
+#'''
+
 
 '''
-  
+原始的方法创建一个singleton对象
+'''
+#'''
+
 class My_singleton(object):
     def foo(self):
         pass
 
 my_singleton=My_singleton()
+#'''
 
+
+'''
 class Singleton(object):
     def __new__(cls, *args, **kw):
         if not hasattr(cls, '_instance'):

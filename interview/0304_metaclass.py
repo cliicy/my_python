@@ -77,22 +77,12 @@ class DynamicMethod(type):
         super(DynamicMethod, cls).__init__(name, bases, dct)
 
 
-class AbcTest(object):
-    __metaclass__ = DynamicMethod
-
+class AbcTest(object,metaclass=DynamicMethod):
     def mc(self, x):
         print( x * 3)
 
-    def ma(cls):
-        print('method a')
 
-    def mb(cls):
-        print('method b')
-
-
-
-class NotAbc(object):
-    __metaclass__ = DynamicMethod
+class NotAbc(object,metaclass=DynamicMethod):
     def md(self, x):
         print( x * 3)
 
